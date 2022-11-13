@@ -45,7 +45,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
   }
 
   onTodoCreate = async (event: React.ChangeEvent<HTMLButtonElement>) => {
-    if(this.state.newTodoName.length<1){
+    if(this.state.newTodoName.length<1 || this.state.newTodoName.trim().length<1){
       return 0;
     }
     else{
