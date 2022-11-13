@@ -46,7 +46,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
 
   onTodoCreate = async (event: React.ChangeEvent<HTMLButtonElement>) => {
     if(this.state.newTodoName.length<1){
-      alert("please input a value");
+      return 0;
     }
     else{
     try {
